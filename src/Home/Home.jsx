@@ -1,3 +1,4 @@
+import About from "../About/About";
 import Banner from "../Banner/Banner";
 import Navbar from "../Navbar/Navbar";
 
@@ -10,6 +11,7 @@ const Home = () => {
                     <div className="max-w-screen-xl mx-auto">
                     <Navbar></Navbar>
                     <Banner></Banner>
+                    <About></About>
                     </div>
                 </div>
             </div>
