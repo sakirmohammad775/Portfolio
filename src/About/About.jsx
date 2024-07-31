@@ -1,4 +1,5 @@
 import about from "../assets/about.jpg"
+import {  motion } from "framer-motion"
 
 const About = () => {
     return (
@@ -9,13 +10,22 @@ const About = () => {
                     <div className="w-full lg:flex ">
                         {/* profile section */}
                         <div className='lg:w-1/2'>
-                            <img src={about} alt="" />
+                            <motion.img
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: -100 }}
+                                transition={{ duration: 0.8 }}
+                                src={about} alt="" />
                         </div>
-                    {/* para section */}
+                        {/* para section */}
                         <div className="flex flex-col lg:w-1/2 items-center lg:items-start">
-                            <p className="my-2 mx-w-xl py-24 font-light tracking-tight ">As a JavaScript full-stack developer, you specialize in building and maintaining complex web applications that span both the client and server sides. Your expertise covers a broad range of technologies and frameworks, including but not limited to React, Angular, or Vue.js for front-end development, and Node.js, Express, or other server-side technologies for back-end development. You have a deep understanding of JavaScript and its ecosystem, enabling you to seamlessly integrate front-end user interfaces with robust back-end systems and databases. Your skills include developing APIs, managing databases, implementing authentication and authorization, and optimizing performance and security. You thrive in collaborative environments, working closely with designers, other developers, and stakeholders to deliver high-quality, scalable, and user-friendly web applications..</p>
+                            <motion.p 
+                             whileInView={{ opacity: 1, x: 0 }}
+                             initial={{ opacity: 0, x: 100 }}
+                             transition={{ duration: 0.8 }}
+                             src={about} alt="" 
+                            className="my-2 mx-w-xl py-24 font-light tracking-tight ">As a JavaScript full-stack developer, you specialize in building and maintaining complex web applications that span both the client and server sides. Your expertise covers a broad range of technologies and frameworks, including but not limited to React, Angular, or Vue.js for front-end development, and Node.js, Express, or other server-side technologies for back-end development. You have a deep understanding of JavaScript and its ecosystem, enabling you to seamlessly integrate front-end user interfaces with robust back-end systems and databases. Your skills include developing APIs, managing databases, implementing authentication and authorization, and optimizing performance and security. You thrive in collaborative environments, working closely with designers, other developers, and stakeholders to deliver high-quality, scalable, and user-friendly web applications..</motion.p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
