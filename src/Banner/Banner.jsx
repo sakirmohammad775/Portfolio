@@ -1,4 +1,4 @@
-import bannerPicture from '../assets/kevinRushProfile.png'
+import bannerPicture from '../assets/Untitled design.png'
 import { motion } from "framer-motion"
 const container =(delay)=>({
     hidden:{x:-100,opacity:0},
